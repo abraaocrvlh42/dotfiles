@@ -4,7 +4,10 @@ sxhkd &
 
 dunst &
 
-feh --bg-fill /home/coder/Downloads/dracula.jpg
+#Polybar
+~/.config/polybar/launch.sh
+
+feh --bg-fill /home/coder/Downloads/nord.png
 
 #Cursor
 xsetroot -cursor_name left_ptr & 
@@ -43,17 +46,12 @@ bspc config presel_feedback_color "#FFFFFF"
 
 #bspc rules
 bspc rule -a kitty            desktop='^1'
-bspc rule -a TelegramDesktop  desktop='^2'
-bspc rule -a Chromium         desktop='^3' floating=true
-bspc rule -a Thunar           desktop='^4'
-bspc rule -a Code             desktop='^5' 
-bspc rule -a vlc              desktop='^6'
-bspc rule -a discord          desktop='^7'
-bspc rule -a insomnia         desktop='^8'
-bspc rule -a Slack            desktop='^9'
-
-#Polybar
-~/.config/polybar/launch.sh
+bspc rule -a Google-chrome    desktop='^2' floating=true
+bspc rule -a Thunar           desktop='^3'
+bspc rule -a Code             desktop='^4'
+bspc rule -a Atril            desktop='^5' 
+bspc rule -a TelegramDesktop  desktop='^6'
+bspc rule -a mpv              desktop='^7'
 
 #Scripts
 ~/.config/scripts/bat.sh

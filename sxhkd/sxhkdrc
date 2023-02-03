@@ -71,6 +71,13 @@ super + Escapei
 
 #-------------------------Bspwm Hotkeys------------------------------#
 
+# Brightness Control
+XF86MonBrightnessDown
+    brightnessctl set 5-
+
+XF86MonBrightnessUp
+    brightnessctl set +5
+
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
