@@ -23,12 +23,12 @@ export monitor2=$(xrandr |grep ' connected'|sed -n 2p|awk '{print $1}')
 mode=1920x1080
 if [[ -z $monitor2 ]]; then
   xrandr --output "$monitor1" --mode "$mode" --primary
-  bspc monitor "$monitor1" -d term chat www archiver code media discord slack tester
+  bspc monitor "$monitor1" -d term www archiver code office chat media
 else
   xrandr --output "$monitor1" --mode "$mode" --primary
-  bspc monitor "$monitor1" -d term chat www archiver code media discord slack tester
+  bspc monitor "$monitor1" -d term www archiver code office chat media
   xrandr --output "$monitor2" --auto --right-of $monitor1
-  bspc monitor "$monitor2" -d term chat www archiver code media discord slack tester
+  bspc monitor "$monitor2" -d term www archiver code office chat media
 fi
 
 #bspc config

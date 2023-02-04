@@ -8,9 +8,9 @@ super + Return
 super + a
   telegram-desktop
 
-#Chromium
+#Chrome
 super + alt + c
-	chromium
+	google-chrome-stable
 
 #Thunar
 super + r
@@ -73,10 +73,10 @@ super + Escapei
 
 # Brightness Control
 XF86MonBrightnessDown
-    brightnessctl set 5-
+  brightnessctl set 5-
 
 XF86MonBrightnessUp
-    brightnessctl set +5
+  brightnessctl set +5
 
 # quit/restart bspwm
 super + alt + {q,r}
