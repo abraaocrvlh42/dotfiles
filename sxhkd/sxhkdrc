@@ -44,20 +44,19 @@ super + shift + s
 
 #Screenshot fullscreen
 Print
-  	maim -m 10 -f png  -u ~/Pictures/$(date +%d-%m-%y_%H:%M:%S).png | notify-send -u low 'Screenshot saved in ~/Pictures'
+	maim -m 10 -f png  -u ~/Pictures/$(date +%d-%m-%y_%H:%M:%S).png | notify-send -u low 'Screenshot saved in ~/Pictures'
 
 #Screenshot cropped
 super + Print 
-  	maim -s -m 10 -f png  -b 3 -u  ~/Pictures/$(date +%d-%m-%y_%H:%M:%S).png | notify-send -u low 'Screenshot saved in ~/Pictures'                      
+  maim -s -m 10 -f png  -b 3 -u  ~/Pictures/$(date +%d-%m-%y_%H:%M:%S).png | notify-send -u low 'Screenshot saved in ~/Pictures'                      
 
 #Screenshot copy fullscreen
 super + u
-     maim | xclip -selection clipboard -t image/png | notify-send -u low 'Screenshot Copied'
+  maim | xclip -selection clipboard -t image/png | notify-send -u low 'Screenshot Copied'
 
 #Screenshot copy cropped
 super + shift + u
-    maim --select | xclip -selection clipboard -t image/png | notify-send -u low 'Screenshot Cropped Copied'
-
+  maim --select | xclip -selection clipboard -t image/png | notify-send -u low 'Screenshot Cropped Copied'
 
 #----------------------Kitty configuration--------------------------#
 
@@ -157,7 +156,6 @@ super + ctrl + space
 # cancel the preselection for the focused desktop
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
-
 
 #-----------------------------Move/Resize--------------------------------#
 
