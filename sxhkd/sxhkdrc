@@ -13,7 +13,7 @@ super + alt + c
 	google-chrome-stable
 
 #Thunar
-super + r
+super + e
 	thunar
 
 #Code
