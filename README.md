@@ -1,2 +1,2 @@
 # dotfiles
-My dotfiles for Arch Linux with bspwm
+My dotfiles for Arch Linux with bspwm.
