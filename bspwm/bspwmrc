@@ -8,7 +8,7 @@ dunst &
 ~/.config/polybar/launch.sh
 
 #Background
-feh --bg-fill /home/coder/Downloads/nord.png
+feh --bg-fill /home/coder/Downloads/palenight.jpg
 
 #Cursor
 xsetroot -cursor_name left_ptr & 
